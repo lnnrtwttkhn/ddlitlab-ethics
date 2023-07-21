@@ -1,0 +1,116 @@
+\documentclass[11pt,twoside,a4paper]{article}
+\usepackage{style}
+\input{config}
+\usepackage{mdframed}
+\titleformat{\section}{\fontsize{12pt}{14pt}\selectfont\bfseries}{\thesection}{1em}{}
+\titleformat*{\subsection}{\normalsize\bfseries\color{black}}
+\titleformat*{\subsubsection}{\normalsize\bfseries\color{black}}
+\titleformat*{\paragraph}{\normalsize\bfseries\color{black}}
+\titleformat*{\subparagraph}{\normalsize\bfseries\color{black}}
+
+% enable section numbering:
+\setcounter{secnumdepth}{3} 
+\lfoot{Template for creating a personal code word as of September 17, 2020 (according to the template provided by the German Psychological Society (DGPs) on February 19, 2014). Translated from German.}
+\lhead{Ethics Proposal~--~\ApplicantName{}~--~\DateApplication{}~--~\Version{}\newline{}Instructions for creating a personal code word}
+
+\begin{document}
+\thispagestyle{fancy}
+
+\begin{minipage}{0.5\linewidth}
+    \includegraphics[width=\linewidth]{uhh-logo.pdf}
+\end{minipage}
+\begin{minipage}{0.5\textwidth}\raggedleft{}
+    \ApplicantUniversity{}, \ApplicantInstitute{}\\
+    \ApplicantResearchGroup{}\\
+    Contact person for any inquiries:\\
+    Project Leader: \ProjectLeaderName{}\\
+    Telephone: \InvestigatorPhoneNumber{}\\
+    Email: \InvestigatorEmailAddress{}
+\end{minipage}
+
+\begin{flushleft}
+    \Large\textbf{How to create your personal code word?}
+\end{flushleft}
+
+In order to be able to correctly assign your data without violating confidentiality, we require a code word.
+The code word is structured in such a way that no one can infer your person from your code word, not even us.
+However, you yourself can reconstruct your code word at any time if you are asked for it and should have forgotten it.
+We only need to tell you the rule according to which you have to produce it.
+
+\begin{mdframed}[
+    linewidth=1pt,
+    linecolor=black,
+    skipabove=1em,
+    skipbelow=1em,
+    ]
+
+    \textbf{These are the components of your code word:}
+
+    \begin{enumerate}[itemsep=0pt, parsep=0pt]
+        \item the last two letters of your mother's maiden name
+        \item the number of letters of your mother's (first) given name
+        \item the last two letters of your father's (first) given name
+        \item your own birthday (only the day, not the month and / or year)
+    \end{enumerate}
+
+    % \textbf{Additional instructions:}
+
+    \begin{itemize}[itemsep=0pt, parsep=0pt]
+        \item Please write all numbers with two digits.
+        If necessary, use a leading zero (for example \texttt{01}).
+        \item In case of several or compound first names, please consider only the first one.
+        \item If you do not know the respective name, use \texttt{XX} for the letters and \texttt{00} for the number.
+    \end{itemize}
+
+    \textbf{Example (fictional):}
+
+    \begin{minipage}{0.3\linewidth}
+        Name of the mother:\\
+        Name of the father:\\
+        Your birthday:
+    \end{minipage}
+    \begin{minipage}{0.7\textwidth}
+        \textbf{Elke}-Hannelore Müller née Mayerhof\textbf{er}\\
+        Wo\textbf{lf}-Rüdiger Müller\\
+        \textbf{09}.11.1987
+    \end{minipage}
+
+    This results in the following code word: \textbf{ER04LF09}
+
+\end{mdframed}
+
+\begin{mdframed}[
+    linewidth=1pt,
+    linecolor=black,
+    skipabove=1em,
+    skipbelow=1em,
+    ]
+    \textbf{Please enter your code word in the boxes:}
+
+    \begin{minipage}{0.6\linewidth}
+        The last two letters of your mother's maiden name:\\
+        Number of letters in your mother's (first) given name:\\
+        The last two letters of your father's (first) given name:\\
+        Your own birthday (only the day):
+    \end{minipage}
+    \begin{minipage}{0.3\textwidth}
+        $\square$$\square$\\
+        $\square$$\square$\\
+        $\square$$\square$\\
+        $\square$$\square$
+    \end{minipage}
+\end{mdframed}
+
+\begin{mdframed}[
+    linewidth=1pt,
+    linecolor=black,
+    skipabove=1em,
+    skipbelow=1em,
+    ]
+    \textbf{Important:}
+    This list stays with you.
+    Keep it safe!
+    You should not show it to anyone!
+\end{mdframed}
+
+\end{document}
