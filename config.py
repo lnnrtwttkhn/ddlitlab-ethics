@@ -26,4 +26,5 @@ def write_config(config):
 
 config = read_yaml(path='config.yml')
 config['HeadSha'] = get_sha(length=6)
+config['Version'] = 'Version \href{%s}{%s}' % (config['Repository'] + get_sha(), config['HeadSha'])
 write_config(config)
