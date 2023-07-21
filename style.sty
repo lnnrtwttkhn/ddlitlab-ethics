@@ -89,3 +89,20 @@
 % leave authhor and date empty:
 \author{}
 \date{}
+% use apacite to create apa-style citations:
+\usepackage[sectionbib,numberedbib,bibnewpage]{apacite}
+\usepackage{etoolbox}
+\usepackage{hyperref}
+% change DOIs to hyperlinks:
+% modified to deal with special characters (https://tex.stackexchange.com/questions/3802/how-to-get-doi-links-in-bibliography/19734#19734)
+\newcommand*{\doi}[1]{\href{https://doi.org/\detokenize{#1}}{\detokenize{#1}}}
+% remove URLs from bibliography:
+\renewenvironment{APACrefURL}[1][]{}{}
+\AtBeginEnvironment{APACrefURL}{\renewcommand{\url}[1]{}}
+\renewcommand{\doiprefix}{doi:~\kern-1pt}
+% stop apacite from showing both year and month in the references:
+\AtBeginDocument{\renewcommand{\APACrefYearMonthDay}[3]{\BBOP{#1}\BBCP}}
+% for creating apa-Style tables:
+\usepackage{siunitx,booktabs}
+% define the bibliography style:
+\bibliographystyle{apacite}
